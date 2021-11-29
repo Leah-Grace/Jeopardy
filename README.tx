@@ -1,0 +1,41 @@
+# Trivia Game
+
+### API Source/syntax: https://api.trivia.willfry.co.uk   /questions?categories=  "category"  &limit = "number"
+
+1. Game Flow:
+ - - - Welcome to Jeopardy - Pick Names - - 
+        Pick Categories/
+        Pick number of questions/ (2 or 4 or 6)
+        Pick Number of rounds (1)
+        Start the Game Button
+        - - Render Categories and Game tiles in a grid// Render Player Name // Render Player Score 
+             - - Keep Score of Players // Tally Score at end of Game
+             - - Click on questions to select/enter answer in text box
+                - - Final Jeopardy 
+                    - - Daily Double // Round Two - Prompt to pick Number of rounds(1 or 2)
+                        - - Player icons
+                            - - Player bios
+                                - - Player 2 (Automated Player with 30% chance of correct answer)
+                                    - - Keep Icons/tiles inside the window (viewport width etc)
+                                            - - Use Fuzzy match/allow answers to be missspelled
+
+
+
+## Category: Must pick 4 or 5
+    literature
+    food_and_drink
+    history
+    geography
+    general_knowledge
+    movies
+    music
+    science
+    sociaty and culture
+    sports and leisure
+
+##Value:
+- Assign points to each question - Save value in local storage - Refresh page to erase data. New Game and Save Game Options
+- Assign Daily Doubles and Final Jeopardy
+
+Silly Stuff:
+Icons for people
