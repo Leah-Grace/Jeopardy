@@ -4,10 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's Jeopardy</title>
+    <title>Geek Jeopardy</title>
 </head>
 <body>
-    
+    <h1 id="header" style="text-align:center">This is Jeopardy</h1>
+    <button id="play">Play Jeopardy</button>
+    <div id="gameSetup" style="display: none;">
+        <form>
+            <label id="p1NameLabel">Player 1 NAME:</label>
+            <input id="p1NameInput" type="text"><br>
+            <label id="categoriesLabel">Select Five Categories:</label>
+            <div id="categoriesListDiv"></div>
+            <br>
+            <button id="start" style="display: none;">Start Jeopardy</button>
+        </form>
+    </div>
+    <div id="startDiv" style="display: none;">
+    <div id="tableDiv">
+        <table width="100%">
+            <tr>
+            <th class="c1" id="c10">Category 1</th>
+            <th class="c2" id="c20">Category 2</th>
+            <th class="c3" id="c30">Category 3</th>
+            <th class="c4" id="c40">Category 4</th>
+            <th class="c5" id="c50">Category 5</th>
+            </tr>
+            <tr>
+                <td class="q" class="c1" id="c1q1">100pts</td>
+                <td class="q" class="c2">Q1</td>
+                <td class="q" class="c3">Q1</td>
+                <td class="q" class="c4">Q1</td>
+                <td class="q" class="c5">Q1</td>
+            </tr>
+              <tr>
+                <td class="c1">Q2</td>
+                <td class="c2">Q2</td>
+                <td class="c3">Q2</td>
+                <td class="c4">Q2</td>
+                <td class="c5">Q2</td>
+            </tr>
+              <tr>
+                <td class="c1">Q3</td>
+                <td class="c2">Q3</td>
+                <td class="c3">Q3</td>
+                <td class="c4">Q3</td>
+                <td class="c5">Q3</td>
+            </tr>
+              <tr>
+                <td class="c1">Q4</td>
+                <td class="c2">Q4</td>
+                <td class="c3">Q4</td>
+                <td class="c4">Q4</td>
+                <td class="c5">Q4</td>
+            </tr>
+              <tr>
+                <td class="c1">Q5</td>
+                <td class="c2">Q5</td>
+                <td class="c3">Q5</td>
+                <td class="c4">Q5</td>
+                <td class="c5">Q5</td>
+            </tr>
+        </table>
+    </div>
+    <div id="QuestionDiv" style="display: none;">
+        <table width="100%">
+            <tr>
+            <th>Question: </th>
+        </tr>
+        <tr>
+            <td id="qPlaceholder">Question Placeholder</td>
+        </tr>
+        <tr>
+            <td>Answer0</td>
+            <td>Answer1</td>
+            <td>Answer2</td>
+            <td>Answer3</td>
+        </tr>
+        <tr>
+            <th id="scorePlaceholder">SCORE Placeholder</th>
+        </tr>
+        </table>
+        
+    </div>
+    <div id="playersDiv" >
+        <table width="60%">
+            <tr>
+                <th id="p1NameDisplay">Player 1</th>
+                <th>Jeopardy Geek</th>
+            </tr>
+            <tr>
+                <th>Score</th>
+                <th>Score</th>
+            </tr>
+        </table>
+
+    </div>
+    </div>
 </body>
 <script src="trivia.js"></script>
 </html>
